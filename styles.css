@@ -14,6 +14,24 @@
   box-sizing: border-box;
 }
 
+.head-background {
+  background: linear-gradient(-45deg, #c5d8d3, #f1c8c3, #c44761, #c44761);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
   background-color: var(--primary-color);
 }
@@ -35,10 +53,16 @@ body {
 .navbar {
   opacity: 0.8;
 }
+
+/* nav a:hover,
+nav li.active a {
+  color: white;
+} */
+
 h1 {
   text-align: center;
-  margin-top: 20px;
-  font-size: 200px;
+  /* margin-top: 20px; */
+  font-size: 320px;
   color: white;
   font-weight: bold;
   font-family: var(--heading-font);
@@ -46,8 +70,9 @@ h1 {
 
 .typewriter {
   padding-top: 40px;
-  font-size: 200px;
-  margin: 50px 100px;
+  font-size: 320px;
+
+  padding: 100px 100px;
   text-shadow: 7px 7px #6d6e71;
 }
 
@@ -88,11 +113,15 @@ h2 {
   color: #6d6e71;
 }
 
+.i-am {
+  padding-top: 50px;
+}
+
 .my-name {
   font-size: 80px;
   color: white;
-  position: relative;
-  top: 10px;
+  /* position: relative;
+  top: 10px; */
 }
 .owner-img {
   box-shadow: #6d6e71 10px 10px;
@@ -113,7 +142,6 @@ h2 {
 .primary-link {
   display: block;
   margin: 0 auto;
-
   width: 350px;
   border-radius: 4px;
   padding: 20px 15px;
@@ -134,12 +162,12 @@ h2 {
 }
 
 .responsive {
-  background-color: rgba(255, 255, 255, 0.2);
   width: 100%;
   display: flex;
   padding: 20px 50px;
   font-family: HolidayFree;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .resp {
   color: white;
@@ -151,15 +179,15 @@ h2 {
 
 @media (max-width: 991px) {
   .typewriter {
-    padding-top: 40px;
+    padding-top: 120px;
   }
   h1,
   .typewriter {
-    font-size: 120px;
+    font-size: 150px;
   }
   .i-am {
     font-size: 45px;
-    padding-top: 10px;
+    padding-top: 50px;
   }
   .my-name {
     font-size: 60px;
@@ -178,25 +206,23 @@ h2 {
 }
 
 @media (max-width: 631px) {
-  .typewriter {
-    padding-top: 40px;
-  }
   .typewriter,
   h1 {
-    font-size: 48px;
+    font-size: 70px;
   }
 
   .i-am {
     font-size: 25px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .owner-img {
     width: 250px;
   }
   .typewriter {
-    height: 40px;
+    /* height: 40px; */
     text-shadow: 4px 4px #6d6e71;
-    margin-top: 30px;
+    padding: 100px 50px 50px 50px;
+    /* margin-top: 30px; */
   }
   .my-name {
     font-size: 35px;
