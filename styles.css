@@ -5,7 +5,8 @@
 
 :root {
   --primary-color: #f4d6d3;
-  --secondary-color: #c5d8d3;
+  --secondary-color: #c44761;
+  --heading-text-color: #6d6e71;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font: "Roboto", sans-serif;
 }
@@ -18,6 +19,7 @@
   background: linear-gradient(-45deg, #c5d8d3, #f1c8c3, #c44761, #c44761);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  border-radius: 10px;
 }
 
 @keyframes gradient {
@@ -35,20 +37,13 @@
 body {
   background-color: var(--primary-color);
 }
-.background-header {
-  position: absolute;
-  z-index: -1;
-  top: -120px;
-  left: -100px;
-  width: 900px;
-}
 
 .navbar-brand {
   font-family: HolidayFree;
   color: #6d6e71;
 }
 .nav-link {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 .navbar {
   opacity: 0.8;
@@ -61,8 +56,7 @@ nav li.active a {
 
 h1 {
   text-align: center;
-  /* margin-top: 20px; */
-  font-size: 320px;
+  font-size: 300px;
   color: white;
   font-weight: bold;
   font-family: var(--heading-font);
@@ -71,7 +65,6 @@ h1 {
 .typewriter {
   padding-top: 40px;
   font-size: 320px;
-
   padding: 100px 100px;
   text-shadow: 7px 7px #6d6e71;
 }
@@ -120,13 +113,6 @@ h2 {
 .my-name {
   font-size: 80px;
   color: white;
-  /* position: relative;
-  top: 10px; */
-}
-.owner-img {
-  /* box-shadow: #6d6e71 10px 10px;
-  border-radius: 5px; */
-  width: 400px;
 }
 
 .developer,
@@ -161,23 +147,82 @@ h2 {
   transform: scale(0.97);
 }
 
-.responsive {
-  width: 100%;
-  display: flex;
-  padding: 20px 50px;
-  font-family: HolidayFree;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.resp {
-  color: white;
-  font-size: 30px;
-  position: relative;
-  top: 10px;
-  margin-right: 20px;
+.about-me {
+  background: linear-gradient(
+    180deg,
+    rgba(196, 71, 97, 0.3841911764705882) 0%,
+    rgba(244, 214, 211, 1) 100%
+  );
+
+  padding: 15px;
+  margin: 50px 215px 0px 215px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
 }
 
-@media (max-width: 991px) {
+.who-header {
+  font-size: 60px;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 10px;
+}
+.who-paragraph {
+  font-size: 20px;
+  padding: 10px;
+  color: #ffffff;
+}
+.footer,
+a {
+  text-align: center;
+  color: #6d6e71;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+a:hover {
+  color: #c44761;
+  transition: all 100ms ease-in-out;
+}
+
+.social-links {
+  font-family: HolidayFree;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 40px 20px 10px 20px;
+  margin-top: 100px;
+}
+
+.github {
+  font-family: HolidayFree;
+  padding: 2px;
+  font-weight: bold;
+}
+
+.open-source {
+  padding-top: 10px;
+}
+
+/* .fa-mobile-screen {
+  font-size: 20px;
+}
+
+.fa-tablet-screen-button {
+  font-size: 30px;
+}
+.fa-laptop {
+  font-size: 40px;
+} */
+
+@media (max-width: 1250px) {
   .typewriter {
     padding-top: 120px;
   }
@@ -197,10 +242,22 @@ h2 {
   .maple-leaf {
     font-size: 60px;
   }
+  .about-me {
+    margin: 30px 50px 0px 50px;
+  }
+
+  .who-header {
+    font-size: 50px;
+  }
+
+  .who-paragraph {
+    font-size: 20px;
+  }
+
   .col {
     height: 100px;
   }
-  .responsive {
+  .footer {
     margin-top: 80px;
   }
 }
@@ -219,10 +276,8 @@ h2 {
     width: 250px;
   }
   .typewriter {
-    /* height: 40px; */
     text-shadow: 4px 4px #6d6e71;
     padding: 100px 50px 50px 50px;
-    /* margin-top: 30px; */
   }
   .my-name {
     font-size: 35px;
@@ -241,11 +296,22 @@ h2 {
     margin: 0 auto;
     font-size: 20px;
   }
-  .resp {
+
+  .about-me {
+    margin: 30px 20px 0px 20px;
+  }
+
+  .who-header {
+    font-size: 40px;
+  }
+
+  .who-paragraph {
     font-size: 15px;
   }
-  .resp-img {
-    width: 35px;
-    height: 100%;
+  .open-source {
+    font-size: 12px;
+  }
+  .social-links {
+    font-size: 15px;
   }
 }
