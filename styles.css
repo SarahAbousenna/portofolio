@@ -16,7 +16,7 @@
 }
 
 .head-background {
-  background: linear-gradient(-45deg, #c5d8d3, #f1c8c3, #c44761, #c44761);
+  background: linear-gradient(-45deg, #84c98a, #f1c8c3, #c44761, #c44761);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   border-radius: 10px;
@@ -129,7 +129,7 @@ h2 {
   display: block;
   margin: 0 auto;
   width: 350px;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 20px 15px;
   text-decoration: none;
   text-align: center;
@@ -148,30 +148,48 @@ h2 {
 }
 
 .about-me {
-  background: linear-gradient(
-    180deg,
-    rgba(196, 71, 97, 0.3841911764705882) 0%,
-    rgba(244, 214, 211, 1) 100%
-  );
-
-  padding: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 20px;
   margin: 50px 215px 0px 215px;
-  font-family: "Roboto", sans-serif;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
-.who-header {
+.about-header {
   font-size: 60px;
-  color: #ffffff;
-  border-radius: 4px;
-  padding: 10px;
-  text-shadow: 4px 1px #6d6e71;
+  font-family: HolidayFree;
+  color: var(--primary-color);
+  text-shadow: 2px 2px #6d6e71;
+  margin-top: 20px;
+  -webkit-text-stroke: 1px #6d6e71;
 }
-.who-paragraph {
+
+.a-little-bit {
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: var(--primary-color);
   font-size: 20px;
-  padding: 10px;
-  color: #ffffff;
+  text-shadow: 2px 2px #6d6e71;
+  -webkit-text-stroke: 0.5px #6d6e71;
 }
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #6d6e71;
+  /* background-color: rgb(109, 110, 113, 0.2); */
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.about-text {
+  font-family: "Roboto", sans-serif;
+  color: #6d6e71;
+  padding: 10px;
+}
+
 .footer,
 a {
   text-align: center;
@@ -247,7 +265,7 @@ a:hover {
     margin: 30px 50px 0px 50px;
   }
 
-  .who-header {
+  .about-header {
     font-size: 50px;
   }
 
@@ -284,7 +302,7 @@ a:hover {
     font-size: 35px;
   }
   .coding {
-    width: 200px;
+    width: 350px;
   }
   .developer,
   .based,
@@ -297,13 +315,26 @@ a:hover {
     margin: 0 auto;
     font-size: 20px;
   }
+  .a-little-bit {
+    font-size: 13px;
+    text-shadow: 1px 1px #6d6e71;
+  }
 
   .about-me {
     margin: 30px 20px 0px 20px;
   }
 
-  .who-header {
+  .about-header {
     font-size: 40px;
+  }
+
+  .about-text {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .icon {
+    font-size: 20px;
   }
 
   .who-paragraph {
