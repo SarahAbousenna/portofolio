@@ -49,12 +49,7 @@ body {
   opacity: 0.8;
 }
 
-/* nav a:hover,
-nav li.active a {
-  color: white;
-} */
-
-h1 {
+.hello {
   text-align: center;
   font-size: 300px;
   color: white;
@@ -63,13 +58,12 @@ h1 {
 }
 
 .typewriter {
-  padding-top: 40px;
   font-size: 320px;
   padding: 100px 100px;
   text-shadow: 7px 7px #6d6e71;
 }
 
-.typewriter h1 {
+.typewriter .hello {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #ffffff; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -170,7 +164,7 @@ h2 {
   color: white;
   font-size: 20px;
   text-shadow: 2px 2px #6d6e71;
-  -webkit-text-stroke: 0.8px #6d6e71;
+  -webkit-text-stroke: 0.6px #6d6e71;
 }
 
 .icon {
@@ -186,6 +180,78 @@ h2 {
   padding: 10px;
   font-weight: 500;
 }
+
+/* CONTACT ME PAGE  */
+
+/* .get-in-touch {
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  font-family: var(--heading-font);
+}
+
+.typewriter-get-in-touch {
+  padding: 100px 100px;
+  text-shadow: 4px 4px #6d6e71;
+}
+
+.typewriter-get-in-touch .get-in-touch {
+  overflow: hidden; 
+  border-right: 0.15em solid #ffffff; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 0em; 
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+} */
+
+.questions {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 100px;
+  font-family: HolidayFree;
+  color: white;
+}
+
+.mail-img {
+  width: 1200px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mail {
+  animation-direction: alternate;
+  position: relative;
+  animation: gotmail 5s 1;
+}
+
+@keyframes gotmail {
+  0% {
+    left: -1200px;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.contact {
+  color: #6d6e71;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 40px;
+  margin: 50px 215px 50px 215px;
+  border-radius: 10px;
+}
+.email,
+.phone {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* FOOTER  */
 
 .footer,
 a {
@@ -214,7 +280,7 @@ a:hover {
 .footer {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 40px 20px 10px 20px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .github {
@@ -227,22 +293,11 @@ a:hover {
   padding-top: 10px;
 }
 
-/* .fa-mobile-screen {
-  font-size: 20px;
-}
-
-.fa-tablet-screen-button {
-  font-size: 30px;
-}
-.fa-laptop {
-  font-size: 40px;
-} */
-
 @media (max-width: 1250px) {
   .typewriter {
     padding-top: 120px;
   }
-  h1,
+  .hello,
   .typewriter {
     font-size: 150px;
   }
@@ -276,11 +331,23 @@ a:hover {
   .footer {
     margin-top: 80px;
   }
+
+  .questions {
+    font-size: 50px;
+  }
+  .mail-img {
+    width: 700px;
+  }
+
+  .contact {
+    margin: 100px 50px 220px 50px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 631px) {
   .typewriter,
-  h1 {
+  .hello {
     font-size: 70px;
   }
 
@@ -342,5 +409,17 @@ a:hover {
   }
   .social-links {
     font-size: 15px;
+  }
+
+  .questions {
+    font-size: 30px;
+  }
+  .mail-img {
+    width: 350px;
+  }
+
+  .contact {
+    font-size: 10px;
+    margin: 90px 20px 200px 20px;
   }
 }
