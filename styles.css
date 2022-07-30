@@ -257,9 +257,27 @@ h2 {
   font-size: 100px;
   text-align: center;
   margin-top: 120px;
+  margin-bottom: 50px;
   font-family: HolidayFree;
   color: white;
   text-shadow: 4px 4px #6d6e71;
+}
+
+.home-btn {
+  display: block;
+  margin: 0 auto;
+
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: solid 1px #6d6e71;
+}
+
+.home-btn:hover {
+  background-color: white;
+  border: solid 1px white;
+  text-decoration: none;
+  transition: ease-in-out;
 }
 
 .project-container {
@@ -305,7 +323,7 @@ h2 {
   background-color: #c44761;
   border: none;
   text-decoration: none;
-  transform: scale(0.97);
+  transform: scale(0.97) ease-in-out;
 }
 
 /* FOOTER  */
@@ -399,6 +417,14 @@ a:hover {
   .contact {
     margin: 100px 50px 100px 50px;
     font-size: 20px;
+  }
+
+  .my-portfolio {
+    font-size: 80px;
+    text-shadow: 4px 4px #6d6e71;
+  }
+  .col {
+    width: 100%;
   }
 }
 
