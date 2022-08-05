@@ -266,7 +266,6 @@ h2 {
 .home-btn {
   display: block;
   margin: 0 auto;
-
   width: 400px;
   padding: 10px;
   font-size: 16px;
@@ -423,9 +422,6 @@ a:hover {
     font-size: 80px;
     text-shadow: 4px 4px #6d6e71;
   }
-  .col {
-    width: 100%;
-  }
 }
 
 @media (max-width: 631px) {
@@ -504,5 +500,19 @@ a:hover {
   .contact {
     font-size: 10px;
     margin: 60px 20px 60px 20px;
+  }
+  .my-portfolio {
+    font-size: 50px;
+  }
+
+  .home-btn {
+    width: 200px;
+  }
+  /* .project-container {
+    width: 350px;
+  } */
+
+  .project-heading {
+    font-size: 30px;
   }
 }
